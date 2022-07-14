@@ -1,32 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ibah <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/14 12:42:31 by ibah              #+#    #+#             */
-/*   Updated: 2022/07/14 20:24:12 by ibah             ###   ########.fr       */
+/*   Created: 2022/07/14 15:22:20 by ibah              #+#    #+#             */
+/*   Updated: 2022/07/14 16:25:28 by ibah             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+int	ft_strlen(char *tab)
 {
 	unsigned int	i;
-	int				result;
 
 	i = 0;
-	while ((s1[i] || s2[i]) && (s1[i] == s2[i]) && (i < n - 1))
+	while (tab[i])
 	{
 		i++;
 	}
-	result = s1[i] - s2[i];
-	return (result);
+	return (i);
 }
 
-/*int    main()
+unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {
-	printf("%d", ft_strncmp("0123", "012345", 5));
-}*/
+	unsigned int	i_dest;
+	unsigned int	i_src;
+
+	i_dest = ft_strlen(dest);
+	i_src = 0;
+	if (!src[i_src])
+		return (&dest);
+	while ((src[i_sr]) && (i_src < size -1))
+	{
+		dest[i_dest] = src[i_src];
+		i_src++;
+		i_dest++;
+	}
+	dest[i_dest] = '\0';
+	return (&dest);
+}
