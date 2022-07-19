@@ -6,7 +6,7 @@
 /*   By: ibah <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/15 21:34:50 by ibah              #+#    #+#             */
-/*   Updated: 2022/07/15 21:53:59 by ibah             ###   ########.fr       */
+/*   Updated: 2022/07/19 17:44:56 by ibah             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_iterative_factorial(int nb)
 {
 	int x;
 	
-	x = 5;
+	x = 0;
 	printf("%d! = %d", x, ft_iterative_factorial(x));
 	return 0;
 }*/

@@ -6,7 +6,7 @@
 /*   By: ibah <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/15 21:56:40 by ibah              #+#    #+#             */
-/*   Updated: 2022/07/15 22:47:31 by ibah             ###   ########.fr       */
+/*   Updated: 2022/07/19 18:33:53 by ibah             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,11 @@
 
 int	ft_recursive_factorial(int nb)
 {
-	if (nb <= 0)
+	if (nb < 0)
 		return (0);
-	if (nb == 1)
+	else if (nb == 0)
+		return (1);
+	else if (nb == 1)
 		return (1);
 	else
 		return (nb * ft_recursive_factorial(nb - 1));
