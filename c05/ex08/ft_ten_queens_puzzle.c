@@ -44,7 +44,8 @@ void	ft_print_chessboard(int *chessboard)
 {
 	int	i;
 	char	nb;
-
+	
+	i = 0;
 	while (i < 10)
 	{
 		nb = chessboard[i] + '0';
